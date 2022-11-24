@@ -1,0 +1,25 @@
+.container {
+  --container-padding: 30px;
+  max-width: calc(1170px + var(--container-padding) * 2);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+.grid {
+  --grid-col: 1;
+  --column-gap: 30px;
+  --row-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-col), 1fr);
+  align-items: center;
+  column-gap: var(--column-gap);
+  row-gap: var(--row-gap);
+}
+
+.grid--2-cols {
+  --grid-col: 2;
+}
+
+.grid--3-cols {
+  --grid-col: 3;
+}
